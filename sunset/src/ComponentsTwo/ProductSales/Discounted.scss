@@ -1,0 +1,39 @@
+.Discounted{
+    background-color: #f68b1e;
+    height: auto;
+    margin: 0px;
+    padding-top: 0px;
+    .TopPartDiscouts{
+        h2{
+            color: white;
+            font-weight: 400;
+            font-size: 17px;
+        }
+    }
+    .Discounts{
+        height: 7rem;
+        overflow: scroll;
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .MaxDiscounts{
+            h4{
+                color: white;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+        .MinDiscounts{
+            h4{
+                color: white;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.Staff{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+    .Register{
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .Input{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                label{
+                    font-size: 17px;
+                    font-weight: normal;
+                    color: rgb(56, 51, 51);
+                }
+
+                input{
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    outline-color: rgb(0, 195, 255);
+                    padding: 10px 20px;
+                    width: 450px;
+                }
+
+                select{
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    outline-color: rgb(0, 195, 255);
+                    padding: 10px 20px;
+                    width: 500px;
+                }
+            }
+            .Buttons{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+
+                .Cancelbutton{
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: rgb(255, 8, 0);
+                    color: white;
+                    font-weight: 500;
+                }
+
+                .SubmitButton{
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: purple;
+                    color: white;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+                .SubmitButton:hover{
+                    background-color: rgb(70, 31, 70);
+                }
+            }
+        }
+    }
+}

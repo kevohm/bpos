@@ -1,0 +1,111 @@
+.quoteForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+
+    .TextContainer{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1{
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        p{
+            color: white;
+            font-size: 15px;
+            font-weight: normal;
+            text-align: left;
+            max-width: 900px;
+        }
+    }
+
+    .FormContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        .FormA{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .Entries{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                label{
+                    color: white;
+                    font-size: 16px;
+                }
+                input{
+                    width: 300px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    outline: none;
+                    border: 1.0px solid lightgrey;
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+        }
+
+        .FormList{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            p{
+                color: white;
+                font-size: 20px;
+            }
+
+            .listings{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+
+                label{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .FormTextArea{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        label{
+            color: white;
+            font-size: 16px;
+        }
+        textarea{
+            width: 500px;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            border: 1.0px solid lightgrey;
+            background-color: transparent;
+            color: white;
+        }
+    }
+}

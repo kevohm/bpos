@@ -1,0 +1,84 @@
+.home {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 10%;
+  
+  .HomeDeco {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 0px;
+    width: 100%; /* Set to 100% to use available width */
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .homeContainer {
+    margin-top: 0px;
+    flex: 6;
+    
+    overflow-y: auto;
+
+    
+        /* Hide scrollbar for Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+      
+        /* Hide scrollbar for WebKit (Chrome, Safari) */
+        &::-webkit-scrollbar {
+          width: 0px;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background-color: transparent;
+        }
+
+  
+    .widgets {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .charts {
+      padding: 5px 20px;
+    }
+  
+    .listContainer {
+      box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      padding: 20px;
+      margin: 20px;
+  
+      .listTitle {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 0px;
+      }
+    }
+
+    .Products {
+      .AddButton {
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        button {
+          background-color: purple;
+          color: white;
+          border: none;
+          padding: 10px 25px;
+          border-radius: 10px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: rgb(70, 31, 70);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.userProfile{
+    padding-top: 150px;
+
+    @media (max-width: 768px) {
+        padding-top: 30px;
+    }
+
+    .topUserProfile{
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .topProfileLeft{
+            display: flex;
+            flex-direction: column;
+            flex: 0.5;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            .ProfileImage{
+                img{
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 50%;
+                    background-color: #e2e8f0;
+                }
+            }
+            .UserDetails{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                span{
+                    color: black;
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+            }
+        }
+        .topProfileLeft{
+            display: flex;
+            flex-direction: column;
+            flex: 0.5;
+            gap: 20px;
+            justify-content: flex-start;
+            align-items: center;
+
+            .CurrentWorkPlace{
+                span{
+                    color: black;
+                    font-weight: 700;
+
+                }
+            }
+            .TimeShifts{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                span{
+                    color: black;
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+
+                .ExtendShift{
+                    button{
+                        background-color: #f87171;
+                        color: black;
+                        border: none;
+                        outline: none;
+                        font-weight: bold;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .BottomProfile{
+        padding-top: 40px;
+
+        .SalesReportButton{
+           display: flex;
+           justify-content: space-around;
+           align-items: flex-start;
+           padding-left: 50px;
+
+           button{
+            background-color: #154a93;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+           }
+        }
+
+        .SalesSummary{
+            padding-top: 35px;
+            padding-bottom: 35px;
+            .ListSummary{
+                display: flex;
+                justify-content: space-evenly;
+                .ListShow{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    span{
+                        background-color: #154a93;
+                        color: white;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+
+                    small{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .SalesTables{
+            .TabButtons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                padding-bottom: 25px;
+                padding-top: 20px;
+                button{
+                    background-color: #16a34a;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                   }
+            }
+            .swipableTables{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@media (max-width: 767px){
+        .SuspendedContent{
+            position: fixed;
+            bottom: 0; /* Change to bottom: 0 to align with the bottom of the screen */
+            right: 0;
+            width: 100%; /* Occupy the full width of the screen */
+            background-color: grey;
+            z-index: 9999;
+
+            .title{
+                span{
+                    display: none;
+                }
+            }
+            .MajorMenu{
+                .Majormenuone{
+                    display: flex;
+                    gap: 0px;
+                    .MenuItem{
+                     .Link{
+                        
+                        span{
+                            display: none;
+                        }
+                     }
+                    }
+                }
+            }
+        }
+}

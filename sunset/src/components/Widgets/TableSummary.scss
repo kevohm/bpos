@@ -1,0 +1,44 @@
+.TableSummary {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+
+    @media (max-width: 767px) {
+        padding-top: 100px;
+    }
+  
+
+        .custom-slider{
+            .slick-slide:not(:last-child) {
+                padding-right: 10px;
+              }
+
+              .widgetSummaryItem{
+                border-radius: 10px;
+                display: flex;
+                gap: 10px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: 100px;
+                padding: 10px 10px;
+                width: 100px; 
+                
+                .WidgetIcos{
+                    color: white;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                span{
+                    color: white;
+                }
+                small{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                }
+              }
+        }
+ 
+  }
+  

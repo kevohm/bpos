@@ -1,0 +1,65 @@
+.RegistrationForm {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      .InputDesign {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .Inputs {
+        display: flex;
+        flex-direction: column;
+  
+        label {
+          color: #063992;
+          font-weight: 500;
+          padding-bottom: 3px;
+        }
+  
+        input,
+        select {
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: 1px solid #063992;
+          outline-color: #00c3ff;
+          font-size: 15px;
+          width: auto;
+  
+          &:focus {
+            outline-color: #063992;
+          }
+        }
+  
+        select {
+          width: 38vh;
+        }
+      }
+  
+      .Buttons {
+        display: flex;
+        justify-content: center;
+  
+        button {
+          border-radius: 10px;
+          padding: 10px 20px;
+          border: none;
+          background-color: #063992;
+          color: white;
+          font-weight: 500;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #063992e0;
+          }
+        }
+      }
+    }
+  }
+  

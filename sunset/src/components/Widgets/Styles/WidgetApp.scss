@@ -1,0 +1,15 @@
+.WidgetApp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .Widget {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #063992;
+        background-color: #eff4f7;
+        border-radius: 10px;
+      }
+  }

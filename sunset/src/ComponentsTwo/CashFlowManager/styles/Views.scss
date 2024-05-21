@@ -1,0 +1,37 @@
+.Views{
+    padding-top: 20px;
+
+    .TopSection{
+        h4{
+            color: blue;
+            font-weight: 700;
+        }
+    }
+    .BottomSection{
+        display: flex;
+        justify-content: space-evenly;
+
+        .SideA{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span{
+                background-color: rgb(224, 215, 215);
+                border-radius: 10px;
+                padding: 10px;
+                font-weight: 500;
+            }
+        }
+        .SideB{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span{
+                background-color: rgb(224, 215, 215);
+                border-radius: 10px;
+                padding: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.KegReport{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .SideAReport{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .EntryPoints{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            @media (max-width: 767px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            label{
+                color: #64748b;
+                font-size: 13px;
+            }
+            select{
+                width: 400px;
+                border: 1px solid grey;
+                color: #64748b;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 10px;
+                text-transform: lowercase;
+
+                @media (max-width: 767px) {
+                    width: 300px;
+                    max-width: 100%;
+                }
+
+                option{
+                    color: #64748b;
+                    text-transform: lowercase;
+                    font-size: 13px;
+                }
+            }
+            input{
+                width: 400px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                color: #64748b;
+                font-weight: bold;
+                padding: 10px;
+                @media (max-width: 767px) {
+                    width: 300px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .SideBReport{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 0;
+        @media (max-width: 767px) {
+            padding-top: 20%;
+        }
+        button{
+            background-color: rgb(21, 74, 147);
+            width: 50%;
+            bottom: 0;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 10px;
+        }
+    }
+}

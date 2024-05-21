@@ -1,0 +1,44 @@
+.tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #075985;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+  
+  .animated-tick {
+    font-size: 50px;
+    color: white;
+    animation: tickAnimation 1s ease-in-out;
+  }
+  
+  @keyframes tickAnimation {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Existing styles for the tick and animation */
+
+.browse-button {
+    color: white; /* Text color */
+    background-color: #075985; /* Background color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+  }
+  
+  .browse-button:hover {
+    background-color: #075985; /* Change background color on hover */
+  }
+  
+  

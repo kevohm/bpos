@@ -1,0 +1,159 @@
+.OrderEdit{
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+    @media (max-width: 768px) { 
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 50px;
+    }
+
+    .OrderEditTopPart{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        .LeftOderEdit{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .UserDetails{
+                display: flex;
+                gap: 5px;
+                font-size: 14px;
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+            }
+
+            .Mathematical{
+                display: flex;
+                gap: 10px;
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+
+                span{
+                    color: black;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .RightOderEdit{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .Product{
+                display: flex;
+                gap: 5px;
+                font-size: 14px;
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    .EditOrderBottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .OrderEtry{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: flex-start;
+            
+            label{
+                color: black;
+                font-size: 14px;
+            }
+            select{
+                color: black;
+                font-weight: 500;
+                font-size: 13px;
+                width: 300px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                outline: none;
+                padding: 10px;
+            }
+            input{
+                color: black;
+                font-weight: 500;
+                font-size: 13px;
+                font-size: 13px;
+                width: 300px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                outline: none;
+                padding: 10px;
+            }
+        }
+
+        .SubmitOrderEdit{
+            padding-top: 30px;
+            button{
+                border: none;
+                border-radius: 5px;
+                padding: 10px 15px;
+                background-color: #0c4a6e;
+                color: white;
+            }
+        }
+    }
+
+}

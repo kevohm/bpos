@@ -1,0 +1,159 @@
+.mainWidget{
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .Widgets{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px; 
+
+        @media (max-width: 767px) {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          width: 400px;
+          overflow: scroll;
+        } 
+
+        .viewWidget{
+          display: flex;
+          flex-direction: row;
+          height: fit-content;
+          justify-content: space-between;
+          margin-bottom: 30px; 
+        
+    
+        .Branch{
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: auto;
+            padding: 0px 30px;
+            border-radius: 5px;
+            box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.42);
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.42);
+
+            @media (max-width: 767px) {
+             display: flex;
+             flex-direction: column;
+             height: auto;
+             width: auto;
+             box-shadow: none;
+             -webkit-box-shadow: none;
+             border: 1px solid grey;
+            }
+           
+
+            small{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              
+
+              p{
+                color: rgb(24, 13, 13);
+                font-weight: 600;
+                font-size: 18px;
+
+                a{
+                  text-decoration: none;
+                  color: white;
+                }
+                a:hover{
+                  color: black;
+                }
+              }
+
+              span{
+                color: black;
+                font-weight: bold;
+                padding-left: 10px;
+                font-size: 18px;
+              }
+
+              .Icons{
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+              }
+            }
+
+    
+        }
+      }
+    }
+    .table{
+
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #333;
+      }
+      
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(128, 128, 128, 0.767);
+        border-radius: 3px;
+      }
+      
+      th {
+        background-color: white;
+        color: black;
+        font-weight: normal;
+
+        border-top: 1px solid rgba(128, 128, 128, 0.534);
+        border-right: 1px solid rgba(128, 128, 128, 0.534);
+        border-left: 1px solid rgba(128, 128, 128, 0.534);
+        border-bottom: 2px solid black;
+        border-radius: 3px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      
+      tr:hover {
+        background-color: #f5f5f5;
+        cursor: pointer;
+      }
+      
+}
+.Analysis{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+    span{
+        color: black;
+        font-weight: normal;
+        font-size: 16px;
+
+        .Summary{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            gap: 30px;
+            height: 100px;
+            padding: 20px 15px;
+
+            span{
+                border-radius: 5px;
+                border: 1px solid grey;
+                background-color: white;
+                color: black;
+                padding: 10px 35px;
+                width: auto;
+            }
+        }
+    }
+}
+
+}
+

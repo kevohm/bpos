@@ -1,0 +1,25 @@
+.CategoryCount {
+
+    .CatBuscket{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .Cat {
+            width: 23%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #063992;
+            background-color: #eff4f7;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+    }
+
+  }

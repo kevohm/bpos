@@ -1,0 +1,111 @@
+.Drawer{
+  width: 30vw;
+  background-color: white;
+  padding: 20px;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 20px;
+
+  @media (max-width: 767px) {
+    width: 70vw;
+  }
+
+  h3{
+    color: #0c4a6e;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+
+    @media (max-width: 767px) {
+
+    }
+  }
+
+.InputsReport{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    select{
+        border: 1px solid #e2e8f0;
+        width: 100%;
+        padding: 10px;
+
+        option{
+            color: black;
+            text-transform: lowercase;
+            font-size: 14px;
+        }
+    }
+    input{
+        border: 1px solid #e2e8f0;
+        width: 100%;
+        padding: 10px;
+        color: black;
+
+        
+        @media (max-width: 767px) {
+           color: black;
+        }
+    }
+}
+.DownloadButton{
+    display: flex;
+
+    button{
+        color: white;
+        background-color: #154a93;
+        padding: 5px 15px;
+        width: 100%; 
+        border-radius: 5px;
+    }
+}
+.ButtonsMore{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+    .ViewReport{
+        background-color: #0f766e;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 200px;
+        font-size: 18px;
+        font-weight: 500;
+
+        @media (max-width: 767px) {
+            display: flex;
+            border-radius: 5px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+    .DownloadReport{
+        background-color: #ffd412;
+        color: #032e69;
+        padding: 5px 15px;
+        border-radius: 200px;
+        font-size: 18px;
+        font-weight: 500;
+        @media (max-width: 767px) {
+            display: flex;
+            border-radius: 5px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+}
+
+}

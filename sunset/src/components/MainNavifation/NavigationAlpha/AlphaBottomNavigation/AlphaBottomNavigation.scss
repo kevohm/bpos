@@ -1,0 +1,46 @@
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: red;
+
+    .container{
+        max-width: 768px;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        .nav{
+            max-width: 968px;
+            height: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: red;
+
+           
+
+            .nav__logo, .nav__toggle{
+                color: hsl(250, 8%, 15%);
+                font-weight: 700;
+            }
+            .nav__logo:hover{
+                color: hsl(0,69%,61%);
+            }
+
+            .nav__menu{
+                @media (max-width: 767px) {
+                    position: fixed;
+                    bottom: -100%;
+                    left: 0;
+                    width: 100%;
+                    background-color: hsl(250,60%,98%);
+                    padding: 2rem 1.5rem 4rem;
+                    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+}

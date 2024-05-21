@@ -1,0 +1,19 @@
+.PerformanceScore{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+    span{
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        p{
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* Add custom styles to your CSS file */
+.carousel {
+    margin: 20px; 
+  }
+  
+  .carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Add padding for spacing */
+    margin: 20px;
+  }
+  
+  img {
+    max-height: 500px; 
+    width: auto; 
+  }
+  
+  /* Additional styling for legends if needed */
+  .legend {
+    margin-top: 10px; /* Adjust the margin for spacing */
+  }
+  

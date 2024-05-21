@@ -1,0 +1,175 @@
+.AddUserPage {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media (max-width: 767px) {
+   padding-top: 150px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-bottom: 100px;
+  }
+
+  p {
+    color: grey;
+    font-size: 16px;
+    font-weight: normal;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 5px;
+
+    @media (max-width: 767px) {
+      box-shadow: none;
+      text-align: center;
+      display: none;
+    }
+  }
+
+  .UserForm {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: none;
+    }
+
+    .imagePoint {
+      display: flex;
+      flex: 0.3;
+      justify-content: center;
+      align-items: flex-start;
+      @media (max-width: 767px) {
+         padding-bottom: 20px;
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: grey;
+      }
+    }
+
+    .EntryPoints {
+      display: flex;
+      flex-direction: column;
+      flex: 0.7;
+      gap: 25px;
+
+      h2 {
+        color: grey;
+        font-weight: bold;
+        display: none;
+      }
+
+      .EntriesA {
+        display: flex;
+        gap: 50px;
+        @media (max-width: 767px) {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+       }
+
+        .Entry {
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 767px) {
+            gap: 10px;
+          }
+
+          label {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            span {
+              color: rgb(55, 55, 55);
+              font-size: 12px;
+            }
+            input {
+              border: none;
+              border-bottom: 1px solid grey;
+              color: grey;
+              outline: none;
+              width: 300px;
+              padding-left: 5px;
+            }
+
+            select {
+              border: none;
+              border-bottom: 1px solid grey;
+              color: grey;
+              outline: none;
+              width: 300px;
+              padding-left: 5px;
+              option {
+                padding: 10px;
+                margin: 10px;
+                font-size: 14px;
+                text-transform: capitalize;
+              }
+            }
+          }
+
+          .error{
+            color: red;
+            font-size: 12px;
+          }
+        }
+        .PasswordInput{
+         position: relative;
+         @media (max-width: 767px) {
+            padding-top: 20px;
+         }
+         input{
+         
+            border: none;
+            border-bottom: 1px solid grey;
+            color: grey;
+            outline: none;
+            width: 300px;
+            padding-left: 5px;
+         }
+         .TogglePasswordVisibility{
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+            border: none;
+            background: none;
+            cursor: pointer;
+            color: #0c0c1d;
+            width: 50px;
+         }
+       }
+        .Buttons {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 20%;
+         @media (max-width: 767px) {
+            width: 100%;
+         }
+          button {
+            background-color: #0f766e;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

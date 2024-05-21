@@ -1,0 +1,26 @@
+.WhasApp{
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: 767px) {
+        right: 10px;
+        bottom: 150px;
+    }
+
+    button{
+        img{
+            height: 42px;
+            width: 42px;
+
+            @media (max-width: 767px) {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+}

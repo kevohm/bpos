@@ -1,0 +1,123 @@
+.SalesDiv {
+        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    align-items: center;
+  
+    .item-container {
+      width: calc(25% - 10px); 
+      margin: 0 5px; 
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 10px;
+      
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px); /* Elevate the item-container on hover */
+        
+      }
+      
+  
+      &:nth-child(4n + 1) {
+        margin-left: 0; 
+      }
+  
+      &:nth-child(4n + 4) {
+        margin-right: 0;
+      }
+  
+    
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding-bottom: 15px;
+
+        span{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .ProdImage{
+                 display: flex;
+                    justify-content: flex-start;
+                img{
+                    height: 100px;
+                    width: 130px;
+                    border: 1px solid transparent;
+                   
+                }
+            }
+         
+            button{
+                border: none;
+                outline: none;
+                background-color: #1e1e2c;
+                color: white;
+                padding: 5px 5px;
+                border-radius: 5px;
+            }
+        }
+      }
+  .Controls{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      .quantity-controls {
+        display: none; 
+        position: absolute; 
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px;
+        background-color: #f68b1e; 
+        backdrop-filter: blur(4px); 
+        border-radius: 5px; 
+        width: auto;
+
+       button{
+        background-color: white;
+        color: black;
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        border-radius: 50%;
+       }
+      }}
+      &:hover .quantity-controls {
+        display: flex; /* Show quantity-controls on hover */
+      }
+    
+    }
+
+    @media screen and (max-width: 767px) {
+        .item-container {
+            width: calc(50% - 10px); 
+            .Controls{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            .quantity-controls {
+                display: flex; /* Show quantity-controls without hovering on small screens */
+                justify-content: center;
+                align-items: center;
+                margin-left: 5px;
+                margin-right: 5px;
+              }
+            }
+        }
+      }
+  }
+
+  

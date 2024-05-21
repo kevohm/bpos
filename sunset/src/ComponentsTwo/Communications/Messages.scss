@@ -1,0 +1,47 @@
+.Messages{
+    padding-top: 20px;
+    background-color: rgba(224, 243, 248, 0.8470588235);
+
+    .messageConsole{
+        background-color: rgba(224, 243, 248, 0.8470588235);
+        height: 70vh;
+        overflow: scroll;
+    }
+    .messageSend{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .SendTop{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 15px;
+            padding-left: 30px;
+        }
+        .SendBottom{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            input{
+                width: 800px;
+                height: 2rem;
+                border-radius: 50px;
+                border: 2px solid grey;
+                outline: none;
+                padding-left: 10px;
+            }
+
+            span{
+                cursor: pointer;
+                .icon{
+                    color: #063992;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

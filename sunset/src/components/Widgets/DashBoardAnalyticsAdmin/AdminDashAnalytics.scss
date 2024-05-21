@@ -1,0 +1,50 @@
+.AdminDashAnalytics{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
+    .ProductsDash{
+        background-color: #f0f0f0; /* Light gray background */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        display: none;
+        .headerDash{
+            background-color: white;
+            h3{
+                color: #0c4a6e;
+                font-weight: bold;
+                text-align: left;
+                padding-bottom: 15px;
+                padding-left: 30px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .SummaryDash{
+        background-color: #fffefe; 
+        display: flex;
+        flex-direction: column;
+
+        .salesHeader{
+            h3{
+                color: #082f49;
+                font-weight: bold;
+                text-align: left;
+                padding-bottom: 15px;
+                padding-left: 30px;
+                font-size: 20px;
+                padding: 1rem 2rem;
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+        .DashGraph{
+            background-color: #f1f5f9;
+        }
+    }
+    
+}

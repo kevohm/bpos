@@ -1,0 +1,71 @@
+.ResponseForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+
+    @media (max-width: 768px) { 
+        width: auto;
+    }
+
+    .responseOrder{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .responseEntry{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 5px;
+
+            label{
+                color: grey;
+                font-size: 14px;
+            }
+            input{
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 10px;
+                color: black;
+                font-weight: bold;
+                width: 400px;
+
+                @media (max-width: 768px) { 
+                    width: 100%;
+                }
+            }
+            img{
+                height: auto;
+                width: auto;
+                background-color: #e2e8f0;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .responseActions{
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        button{
+            width: 100%;
+            padding: 10px 15px;
+            color: white;
+            background-color: indigo;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            bottom: 0;
+        }
+    }
+}

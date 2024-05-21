@@ -1,0 +1,49 @@
+.StockTaking{
+    padding-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 5%; 
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+        margin-top: 0%;
+        padding-right: 5px;
+        padding-left: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .DownloadStockSheet{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .StockTakeHeader{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        h3{
+            color: #154a93;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: #154a93;
+            small{
+                color: green;
+                font-size: 18px;
+            }
+        }
+    }
+}

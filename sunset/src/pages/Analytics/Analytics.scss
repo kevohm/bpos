@@ -1,0 +1,42 @@
+.MainAnalytics{
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .SalesReport{
+
+        h3{
+            text-align: center;
+            font-weight: 200;
+        }
+
+        .salesItems{
+            display: flex;
+            padding-top: 20px;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .SalesItem{
+                display: flex;
+                
+                
+                p{
+                    text-align: left;
+                    font-weight: normal;
+                }
+
+                button{
+                    padding: 10px 25px;
+                    background-color: transparent;
+                    color: black;
+                    font-weight: bold;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+               
+            }
+        }
+    }
+}

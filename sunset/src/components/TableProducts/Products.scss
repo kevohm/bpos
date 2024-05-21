@@ -1,0 +1,26 @@
+.Table{
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .TableContainer{
+        @media (max-width: 767px) {
+            width: 500px;
+            overflow: scroll;
+        }
+        
+        .TableBody{
+            @media (max-width: 767px) {
+                width: 500px;
+                overflow: scroll;
+
+                .TableCell {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding: 12px;
+                  }
+            }
+        }
+    }
+}

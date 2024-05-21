@@ -1,0 +1,79 @@
+.Sales{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+
+    .Head{
+        h1{
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+    .SalesSection{
+        
+        padding-left: 50px;
+        padding-right: 50px;
+        @media (max-width: 768px) {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .SalesSummary{
+          margin-bottom: 20px;
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                gap: 20px;
+                padding-top: 15px;
+                padding-bottom: 50px;
+                @media (max-width: 768px) {
+                   display: grid;
+                   grid-template-columns: repeat(2, 1fr);
+                   padding-bottom: 20px;
+                }
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                        span{
+                            background-color: #032e69;
+                            color: white;
+                            padding: 10px 25px;
+                            text-transform: capitalize;
+                            border-radius: 5px;
+                        }
+                        small{
+                            color: black;
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                    
+                }
+                
+            }
+            .downloadSales{
+                display: flex;
+                justify-content: center;
+                button{
+                    background-color: #ea580c;
+                    color: white;
+                    font-weight: bold;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+        .PdfModal{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+}

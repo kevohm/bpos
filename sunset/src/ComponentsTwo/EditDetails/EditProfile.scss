@@ -1,0 +1,86 @@
+.EditForm{
+    padding-top: 20px;
+    background-color: rgba(224, 243, 248, 0.8470588235);
+    height: 100vh;
+
+    .FormUpdate{
+        margin-top: 20px;
+        background-color: white;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+
+        .EditEntries{
+            display: flex;
+            flex-direction: column;
+            padding-left: 50px;
+            padding-right: 50px;
+            label{
+                text-align: left;
+            }
+            input{
+                border: 1px solid grey;
+                border-radius: 10px;
+                padding: 10px;
+            }
+        }
+        .ButtonUpdate{
+            padding-top: 0px;
+            button{
+                background-color: #063992;
+                padding: 10px 15px;
+                font-size: 18px;
+                font-weight: bold;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                color: white;
+            }
+        }
+    }
+    .Suggestions{
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .LinkSuggestions{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            text-decoration: none;
+            color: black;
+            
+        }
+        .borderCenter{
+            border-right: 1px solid #063992;
+            height: 50px;
+        }
+        .DeleteAccount{
+            background-color: white;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 20px;
+           
+    
+            button{
+                border: none;
+                outline: none;
+                color: red;
+                font-weight: bold;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+  
+}

@@ -1,0 +1,12 @@
+.page-numbers {
+    display: inline-block;
+  }
+  
+  .page-numbers span {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .page-numbers span.active {
+    font-weight: bold;
+  }

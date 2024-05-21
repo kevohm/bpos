@@ -1,0 +1,38 @@
+.StockOrder{
+    padding-top: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 15px;
+
+    @media (max-width: 768px) {
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 30px;
+    }
+ 
+    .TopOrderPart{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h3{
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button{
+            background-color: #032e69;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+}

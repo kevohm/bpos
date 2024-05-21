@@ -1,0 +1,58 @@
+.AdminRoutes {
+    display: none; 
+}
+
+@media (max-width: 767px) {
+    .AdminRoutes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px; /* Shorthand for padding */
+        margin-top: 20px;
+    }
+
+    .AdminRoutes .RoutesHeader h1 {
+        color: #082f49;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .AdminRoutes .TheRoutes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .AdminRoutes .TheRoutes .RoutesA,
+    .AdminRoutes .TheRoutes .RoutesB {
+        display: flex;
+        gap: 8px;
+    }
+
+    .AdminRoutes .TheRoutes .RoutesA .RouteOne,
+    .AdminRoutes .TheRoutes .RoutesB .RouteOne {
+        border: 1px solid grey;
+        outline: none;
+        background-color: #082f49;
+        padding: 15px 20px;
+        width: 120px;
+    }
+
+    .AdminRoutes .TheRoutes .RoutesA .RouteOne a,
+    .AdminRoutes .TheRoutes .RoutesB .RouteOne a {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .AdminRoutes .TheRoutes .RoutesA .RouteOne a span,
+    .AdminRoutes .TheRoutes .RoutesB .RouteOne a span {
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .AdminRoutes {
+        display: none; /* Hide for widths greater than 767px */
+    }
+}

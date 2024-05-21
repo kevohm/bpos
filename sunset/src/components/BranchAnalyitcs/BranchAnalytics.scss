@@ -1,0 +1,216 @@
+.BranchAnalytics{
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .TopBar{
+        padding-bottom: 20px;
+
+        .TopBarStatus{
+            display: flex;
+            align-items: center;
+          
+            span {
+              margin-right: 10px;
+            }
+          
+            .statusDot {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+            }
+          
+            .open {
+              background-color: green;
+            }
+          
+            .closed {
+              background-color: red;
+            }
+          
+            .blink {
+              animation: blink 2s infinite;
+            }
+          
+            @keyframes blink {
+              0%, 50%, 100% {
+                opacity: 1;
+              }
+              25%, 75% {
+                opacity: 0;
+              }
+            }
+        }
+        
+        .TopBarItem{
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px 10px;
+
+            span{
+                color: black;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            .MoneyDist{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                width: 100px;
+
+                .CashItem{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .money{
+                        color: orange;
+                    }
+                }
+            }
+        }
+
+
+    }
+    .BranchDesc{
+      padding-top: 20px;
+      h1{
+        color: #155e75;
+        font-weight: bold;
+        font-size: 25px;
+        text-transform: capitalize;
+      }
+    }
+    .filterProducts{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 20px;
+          padding-bottom: 20px;
+
+          @media (max-width: 767px) {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              padding-bottom: 20px;
+          }
+
+          li{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+
+              span{
+                  color: black;
+                  font-weight: bold;
+                  font-size: 14px;
+              }
+              small{
+                  color: #6b7280;
+                  font-weight: 500;
+                  font-size: 12px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  strong{
+                      display: flex;
+                      gap: 5px;
+                      justify-content: center;
+                      align-items: center;
+                  }
+              }
+          }
+      }
+  }
+  .BranchStock{
+
+    .MostMoving{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      h3{
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .performaceList{
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+
+          li{
+            flex-basis: calc(50% - 15px); /* Set the width of each list item to 50% minus the gap */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 10px;
+            border: 1px solid #ccc;
+
+            p{
+              font-weight: 600;
+              font-size: 12px;
+            }
+            span{
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              font-size: 13px;
+            }
+
+          }
+        }
+      }
+    }
+
+    .DownloadPdf{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      @media (max-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      h2{
+        color: rgb(21, 74, 147);
+        font-size: 24px;
+      }
+      .BranchButtons{
+        display: flex;
+        gap: 25px;
+        button{
+          background-color: rgb(21, 74, 147);
+          color: white;
+          padding: 10px 15px;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+        }
+      }
+     
+    }
+  }
+
+  .SalesAnalysis{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}

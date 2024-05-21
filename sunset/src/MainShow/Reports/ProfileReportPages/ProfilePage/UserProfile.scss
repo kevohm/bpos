@@ -1,0 +1,236 @@
+.UserProfileMain{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .TimeShift{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+
+        @media (max-width: 768px) {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           gap: 20px;
+        }
+
+        .ShiftClass{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            span{
+                background-color: #032e69;
+                color: white;
+                padding: 10px;
+                text-transform: capitalize;
+                border-radius: 5px;
+            }
+            small{
+                color: black;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .Head{
+        h1{
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+.UserProfile{
+    display: flex;
+    justify-content: center;
+
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .ProfilePicture{
+        background-color: #032e69;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+         @media (max-width: 768px) {
+            width: 100%;
+            height: 200px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+         }
+        img{
+            background-color: white;
+            height: 150px;
+            width: 150px;
+            border: none;
+            border-radius: 50%;
+            @media (max-width: 768px) {
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+        }
+    }
+    .PersonalInformation{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin-left: 10px;
+        @media (max-width: 768px) {
+            margin-left: 0px;
+            width: 100%;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+
+        .PersonalTop{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            .Header{
+                border-bottom: 1px solid grey;
+                h1{
+                    color: black;
+                    text-align: left;
+                    font-weight: 600;
+                }
+            }
+          
+
+            .PersonalA{
+                display: flex;
+                gap: 250px;
+                flex: 1;
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    width: 100%;
+                }
+
+                .NameDetails{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    h3{
+                        color: black;
+                        font-weight: 600;
+                    }
+                    span{
+                        color: #64748b;
+                    }
+                }
+                .Contact{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    h3{
+                        color: black;
+                        font-weight: 600;
+                    }
+                    span{
+                        color: #64748b;
+                    }
+                }
+            }
+        }
+    }
+
+    .ChangePassword{
+        margin-left: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+        .Header{
+            border-bottom: 1px solid grey;
+            h1{
+                color: black;
+                text-align: left;
+                font-weight: 600;
+            }
+        }
+
+        .PasswordForm{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            .InputA{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                label{
+                    color: black;
+                    font-weight: 600;
+                }
+                input{
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    color: black;
+                    width: 300px;
+
+                     @media (max-width: 768px) {
+                        width: 100%;
+                     }
+                }
+
+            }
+
+            .submitButton{
+                padding-top: 20px;
+                display: flex;
+                button{
+                    width: 100%;
+                    background-color: #032e69;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+}

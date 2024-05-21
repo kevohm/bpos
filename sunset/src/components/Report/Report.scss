@@ -1,0 +1,141 @@
+.Report {
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: transparent;
+    height: 100vh;
+    overflow: auto;
+  
+    .SearchInputs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+  
+      .SearchItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+  
+        label {
+          color: black;
+          font-weight: bold;
+          font-size: 20px;
+        }
+  
+        input {
+          border: 1px solid #999;
+          border-radius: 10px;
+          padding: 10px 20px;
+          font-weight: bold;
+          font-size: 20px;
+          outline: none;
+          transition: border-color 0.3s ease-in-out;
+  
+          &:focus {
+            border-color: #063992;
+          }
+        }
+  
+        select {
+          border: 1px solid #999;
+          border-radius: 10px;
+          padding: 10px 20px;
+          font-weight: bold;
+          font-size: 20px;
+          width: 300px;
+          outline: none;
+          transition: border-color 0.3s ease-in-out;
+  
+          &:focus {
+            border-color: #063992;
+          }
+        }
+      }
+    }
+  
+    .SearchGo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+  
+      button {
+        padding: 15px 25px;
+        background-color: #063992;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  
+    .Results {
+      padding-top: 20px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  
+      .Excel {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+  
+        .ExportButton {
+          color: #063992;
+          padding: 10px 25px;
+          font-weight: bold;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+  
+      .resultsTab {
+        padding-bottom: 20px;
+  
+        .ViewResults {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+  
+          .ResultItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+  
+            span {
+              color: black;
+              font-weight: bold;
+              font-size: 20px;
+            }
+          }
+  
+          .ResultsHeader {
+            display: flex;
+            gap: 40px;
+            border-bottom: 1px solid grey;
+  
+            .HeaderResults {
+              display: flex;
+              gap: 20px;
+  
+              span {
+                color: purple;
+                font-weight: bold;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

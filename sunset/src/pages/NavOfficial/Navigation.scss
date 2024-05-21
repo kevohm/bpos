@@ -1,0 +1,348 @@
+.sidebar {
+  top: 0;
+  left: 0; 
+  width: 200PX;
+  transition: width 0.5s ease;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  height: 100vh;
+  background-color: white;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  
+    /* Hide scrollbar for WebKit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+  @media (max-width: 767px) {
+    background-color: #1e1e2c;
+ }
+
+  &.closed {
+    width: 0;
+  }
+
+  &.minimized {
+    width: 60px;
+
+    .sidebar-tab {
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .sidebarcontent {
+    height: 100%;
+    padding-top: 20px;
+
+
+
+    .sidebartabs {
+   
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 60px;
+
+      .sidebar-tab {
+
+        .DashBoardHeader{
+          background-color: #d97706;
+          padding: 5px 10px;
+          margin-bottom: 15px;
+
+          a{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+            span{
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+          &:hover {
+            background-color: #b45309;
+            transition: 1s;
+          }
+
+        }
+
+        .SettingsTab{
+          background-color: white;
+          padding: 5px 10px 25px 10px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid black;
+
+          a{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+            span{
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+          &:hover {
+            background-color: rgb(228, 223, 223);
+            transition: 1s;
+          }
+        }
+
+        .EveryTab{
+          background-color: white;
+          padding: 5px 10px;
+          margin-bottom: 20px;
+          a{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+            span{
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+
+          &:hover {
+            background-color: #aeddd0;
+            transition: 1s;
+          }
+        }
+
+        .BranchView{
+          background-color: #d97706;
+          padding: 5px 10px;
+          margin-bottom: 20px;
+          .ViewButton{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+          }
+
+          &:hover {
+            background-color: #b45309;
+            transition: 1s;
+          }
+        }
+
+        .LogoutTab{
+          background-color: #059669;
+          padding: 5px 10px; 
+          margin-bottom: 20px;
+
+          button{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            background-color: transparent;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+          }
+          &:hover {
+            background-color: #047857;
+            transition: 1s;
+          }
+        
+
+        }
+
+        .collapsible-menu{
+          .collapsible-menu {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin: 10px;
+            width: 200px;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            height: 100vh;
+            background-color: white;
+            overflow: hidden; /* Hide overflow to prevent scrollbar flash */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: width 0.5s ease; /* Transition for menu width */
+          }
+          
+          .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            padding: 5px 10px;
+            margin-bottom: 20px;
+
+            .ViewButton{
+              text-decoration: none;
+              color: black;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 10px;
+            }
+
+            &:hover {
+              background-color: #aeddd0;
+              transition: 1s;
+            }
+
+          }
+          
+          .menu-branches {
+            padding: 5px;
+            transition: max-height 0.5s ease;
+            max-height: 150px;
+            overflow: auto;
+              /* Hide scrollbar for Firefox */
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+
+            /* Hide scrollbar for WebKit (Chrome, Safari) */
+            &::-webkit-scrollbar {
+              width: 6px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              background-color: transparent;
+            }
+
+            .SettingsBranch{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              padding-top: 0px;
+              padding-bottom: 10px;
+              padding: 8px;
+              .LinkSettings{
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+                    }
+          
+          .menu-branches ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .menu-branches li {
+            padding: 8px;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .LinkBranch{
+              display: flex;
+              gap: 10px;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          
+          .menu-branches li:hover {
+            background-color: #e0e0e0;
+          }
+
+          .collapsible-menu.open .menu-branches {
+            max-height: 200px; /* Adjust the value based on your content height */
+          }
+          
+        }
+
+
+     
+
+        &.active {
+          background-color: transparent;
+          color: black;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 0;
+
+    .toggle-button {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 60px;
+      padding: 10px;
+      background-color: #063992;
+      color: black;
+      cursor: pointer;
+      border-bottom: 1px solid #ddd;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .sidebar-content {
+      display: flex;
+    }
+
+    &.minimized {
+      .sidebar-content {
+        display: none;
+      }
+
+      .sidebar-header {
+        .logo {
+          display: none;
+        }
+      }
+
+      .sidebar-tab {
+        span {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .toggle-button {
+      display: none;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .toggle-button {
+      display: none;
+    }
+  }
+}

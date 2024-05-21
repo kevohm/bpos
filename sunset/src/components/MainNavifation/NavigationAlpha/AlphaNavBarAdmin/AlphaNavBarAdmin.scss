@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+:root {
+  --main-color: white;
+  --main-transition: 0.5s all ease-in-out;
+}
+::selection {
+  color: white;
+  background: var(--main-color);
+}
+
+.AlphaNavBarAdmin {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  color: black;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #021e46;
+
+  @media (max-width: 767px) {
+    background-color: white;
+  }
+
+  nav {
+    background-color: #021e46;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+    }
+
+    .AlphaAccountLogo {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      padding-left: 10px;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+        color: rgba(21, 74, 147, 1);
+        font-weight: bold;
+        padding-left: 10px;
+      }
+    }
+
+    .LastPart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .Notifications {
+        position: relative;
+        cursor: pointer;
+        width: 35px;
+
+        &:hover {
+          color: rgb(105, 105, 105);
+          transition: 1s ease;
+        }
+        .NotificationCount {
+          position: absolute;
+          top: -5px;
+          right: 0px;
+          background-color: white;
+          border-radius: 50%;
+          color: red;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+
+      .user-pic {
+        width: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: transparent;
+      }
+    }
+
+    .sub-menu-wrap-alpha {
+      position: absolute;
+      top: 110%;
+      right: 1%;
+      width: 350px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.5s;
+
+      .sub-menu {
+        background-color: white;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+
+        .user-Info {
+          display: flex;
+          align-items: center;
+          color: black;
+
+          h3 {
+            font-weight: 500;
+          }
+          img {
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+          }
+        }
+        hr {
+          background: #ddd;
+          border: 0;
+          height: 1px;
+          width: 100%;
+          margin: 15px 0 15px;
+        }
+        .sub-menu-link {
+          color: black;
+          display: flex;
+          text-decoration: none;
+          align-items: center;
+          margin: 10px;
+
+          p {
+            width: 100%;
+            font-size: 12px;
+          }
+          button {
+            width: 100%;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          .IconSub {
+            margin-right: 15px;
+            padding: 1px;
+          }
+          span {
+            .MoveIcon {
+              color: black;
+              font-size: 20px;
+              transition: transform 0.5s;
+            }
+          }
+        }
+        .sub-menu-link:hover {
+          span {
+            .MoveIcon {
+              transform: translateX(5px);
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .ProductActivities {
+          flex: 0.5;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 100%;
+
+          h1 {
+            font-weight: 600;
+            font-size: 18px;
+            color: #0c4a6e;
+          }
+
+          .TransactionEvents {
+            height: 40vh;
+            overflow: scroll;
+
+            @media (max-width: 767px) {
+              height: 30vh;
+            }
+
+            /* Hide scrollbar for Firefox */
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+
+            /* Hide scrollbar for WebKit (Chrome, Safari) */
+            &::-webkit-scrollbar {
+              width: 0px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              background-color: transparent;
+            }
+
+            .transaction-list {
+              list-style-type: none;
+              padding: 0;
+
+              .transaction-item {
+                margin-bottom: 10px;
+                position: relative;
+                padding-left: 10px;
+                margin-left: 0;
+                cursor: pointer;
+
+                .dot-line {
+                  position: relative;
+                  border-left: 2px solid #000;
+                  padding-left: 15px;
+
+                  p {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    text-align: left;
+                    font-size: 12px;
+                    color: #3d3e3f;
+                    background-color: #e0f2fe;
+                    padding: 5px 10px;
+                    margin: 5px 5px;
+                    border-radius: 5px;
+                    transition: 0.5s;
+                  }
+                  p:hover {
+                    background-color: #a4d5f6;
+                    transition: 0.5s;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .sub-menu::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        width: 25px;
+        height: 25px;
+        background-color: #082f49;
+        transform: rotate(45deg);
+      }
+    }
+    .open-menu-alpha {
+      max-height: 400px;
+    }
+  }
+
+  .BranchesView {
+    display: none;
+    @media (max-width: 767px) {
+      display: flex;
+      width: 100%;
+      padding: 15px;
+
+      button {
+        color: black;
+        background-color: #082f49;
+        padding: 15px 45px;
+        border-radius: 0px;
+        color: white;
+        width: 100%;
+      }
+    }
+  }
+}

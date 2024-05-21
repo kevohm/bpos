@@ -1,0 +1,196 @@
+.Hero {
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+  
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      padding-bottom: 50px;
+      padding-left: 5px;
+      padding-right: 5px;
+      height: auto;
+      gap: 10px;
+    }
+  
+    .Wrapper {
+      height: 100%;
+      width: 100%;
+      flex: 0.5;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      
+  
+      @media (max-width: 767px) {
+        padding-left: 5px;
+        padding-right: 5px;
+        position: relative;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .TextContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        width: 100%;
+  
+        @media (max-width: 767px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 50px;
+          gap: 20px;
+        }
+  
+        h2 {
+          font-size: 30px;
+          color: #ffd32f;
+          letter-spacing: 10px;
+          text-transform: uppercase;
+          @media (max-width: 767px) {
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 7px;
+          }
+        }
+        h1 {
+          color: white;
+          font-size: 50px;
+          max-width: 600px;
+  
+          @media (max-width: 767px) {
+            font-size: 1.2rem;
+            text-align: center;
+          }
+        }
+  
+        p {
+          color: white;
+          font-size: 15px;
+  
+          @media (max-width: 767px) {
+            font-size: 1rem;
+            text-align: center;
+          }
+        }
+  
+        .buttons {
+          padding-top: 15px;
+          padding-bottom: 20px;
+          display: flex;
+          z-index: 1;
+  
+          @media (max-width: 767px) {
+            padding-left: 10px;
+            padding-right: 10px;
+            display: grid;
+            grid-template-columns: repeat(
+              2,
+              1fr
+            ); 
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+          }
+  
+          a {
+            button {
+              padding: 20px;
+              border: 1px solid transparent;
+              border-radius: 10px;
+              background-color: transparent;
+              color: white;
+              margin-right: 20px;
+              width: 150px;
+              font-weight: 300;
+              font-weight: bold;
+              cursor: pointer;
+            }
+          }
+          img {
+            width: 50px;
+            z-index: 999;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  
+    .ImageContainer {
+      flex: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      top: 0;
+      right: 0;
+      position: absolute;
+      padding-left: 100px;
+      padding-right: 100px;
+  
+      .swiperSlides{
+        width: 600px;
+        transition: 2s;
+  
+        .individualSlide{
+          background: transparent;
+          height: 100%;
+  
+          img {
+            height: auto;
+            width: auto;
+            object-position: center;
+            object-fit: contain;
+            @media (max-width: 767px) {
+              height: 35vh;
+              width: 100%;
+              object-position: center;
+              object-fit: contain;
+            }
+            
+          }
+        }
+      }
+  
+      @media (max-width: 767px) {
+        padding-left: 5px;
+        padding-right: 5px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-top: 30px;
+  
+      }
+    }
+  
+    .slidingText {
+      position: absolute;
+      bottom: -10px;
+      font-size: 20vh;
+      color: #ffffff09;
+      white-space: nowrap;
+      width: 25%;
+      font-weight: bold;
+      padding-bottom: 20px;
+    
+    }
+  }
+  

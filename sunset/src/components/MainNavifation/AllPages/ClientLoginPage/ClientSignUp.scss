@@ -1,0 +1,208 @@
+.split-screen2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        padding-bottom: 0;
+    }
+    .leftScreen{
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg,rgba(1, 1, 67, 0.9) 0%,rgba(27, 75, 158, 0.9) 100%);
+        background-size: cover;
+        
+        .copy{
+            text-align: center;
+            --webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            h1{
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 0;
+                color: #ffd412;
+                @media (min-width: 900px) {
+                    color: #ffd412;
+                   }
+            }
+            p{
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+                @media (min-width: 900px) {
+                 color: white;
+                }
+            }
+           
+        }
+        @media (min-width: 900px) {
+            display: flex;
+            width: 50%;
+            height: auto;
+            background: 
+            linear-gradient(135deg,rgba(1, 1, 67, 0.9) 0%,rgba(27, 75, 158, 0.9) 100%);
+
+        }
+    }
+
+    .rightScreen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        @media (min-width: 900px) {
+            display: flex;
+            width: 50%;
+            overflow: scroll;
+            padding-top: 150px;
+        }
+        form{
+            width: 330px;
+            margin-bottom: 0px;
+            @media (min-width: 900px) {
+                margin-top: 100px;
+            }
+            .copy{
+                color: black;
+                font-weight: bold;
+                h2{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                .login-container{
+                    p{
+                        margin: 1.5rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .input-container{
+                .name, .email, .password {
+                    label {
+                      display: block;
+                      margin-bottom: 0.5rem;
+                      font-size: 1rem;
+                    }
+                  
+                    input {
+                      display: block;
+                      width: 100%;
+                      box-sizing: border-box;
+                      border-radius: 5px;
+                      border: 1px solid #c4c4c4;
+                      padding: 0.5em;
+                      margin-bottom: 1.3rem;
+                      font-size: 1rem;
+                      color: black;
+                    }
+                  }
+
+                  
+                  
+            }
+
+            .input-control{
+                .cta{
+                    .checkbox-container{
+                        display: block;
+                        position: relative;
+                        padding-left: 2rem;
+                        cursor: pointer;
+                        user-select: none;
+                        margin: 0 0 1.2rem 0;
+
+                        input{
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                         
+                        }
+                        input:checked{
+                            background-color: blue;
+                            border: 1px solid blue;
+                        }
+                        .checkmark{
+                            position: absolute;
+                            width: 24px;
+                            height: 24px;
+                            background: white;
+                            border: 1px solid #c4c4c4;
+                            border-radius: 2px;
+                            top: -4px;
+                            left: 0;
+                        }
+                        .checkmark::after{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            width: 5px;
+                            height: 10px;
+                            left: 8px;
+                            top: 4px;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+
+            .checkbox-container{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                
+
+                span{
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-size: 1rem;
+                }
+
+                label {
+                    flex-basis: 50%; /* Two checkboxes per row on large screens */
+                    @media (max-width: 768px) {
+                        flex-basis: 100%; 
+                    }
+                }       
+        }
+
+            .signup-btn{
+                display: block;
+                width: 100%;
+                background-color: #233975;
+                color: white;
+                font-weight: 700;
+                border: none;
+                padding: 1rem;
+                border-radius: 8px;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              
+            }
+            .signup-btn:hover{
+                background-color: #4f6ec2;
+                cursor: pointer;
+            }
+
+            .copy{
+                .legal{
+                    p{
+                        span{
+                            font-size: 80%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

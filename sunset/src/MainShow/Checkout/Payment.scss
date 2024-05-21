@@ -1,0 +1,147 @@
+.PaymentCheckout{
+    padding-top: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 15px;
+
+   @media (max-width: 768px) {
+    padding-top: 50px;
+    margin-top: 5%;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+    .ChechoutOrder{
+        padding: 10px;
+
+        .Headers{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+    
+            .IconTick{
+                color: white;
+                background-color: #0369a1;
+                border: none;
+                outline: none;
+                border-radius: 50%;
+            }
+
+            h2{
+                font-size: 18px;
+            }
+        }
+
+        .AmountsOrder{
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 2rem;
+
+            .DescriptionOrder{
+                padding-bottom: 20px;
+                p{
+                    font-weight: bold;
+                    display: flex;
+                    gap: 10px;
+
+                    span{
+                        font-weight: normal;
+                    }
+                }
+
+
+            }
+
+            .PaymentComplete{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .PaymentInputs{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+
+                    label{
+                        color: #082f49;
+                        font-size: 15px;
+                    }
+
+                    input{
+                        border: 1px solid #d1d5db;
+                        color: black;
+                        width: 400px;
+                        outline: none;
+                        padding: 10px;
+                        border-radius: 5px;
+
+                        @media (max-width: 768px) {
+                            width: 300px;
+                        }
+                    }
+
+                    select{
+                        border: 1px solid #d1d5db;
+                        color: black;
+                        width: 400px;
+                        outline: none;
+                        padding: 10px;
+                        border-radius: 5px;
+
+                        @media (max-width: 768px) {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+            
+
+            .CompleteButtons{
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            .buttonComplete{
+                background-color: #082f49;
+                padding: 5px 10px;
+                width: 150px;
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+            }
+            .buttonAddMore{
+                background-color: #16a34a;
+                padding: 5px 10px;
+                color: white;
+                width: 150px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                cursor: not-allowed;
+                a{
+                    cursor: not-allowed;
+                }
+            }
+
+            }
+        }
+    }
+    
+
+}

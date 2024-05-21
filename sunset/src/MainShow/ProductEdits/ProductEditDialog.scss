@@ -1,0 +1,135 @@
+.ProductEditDialog{
+    padding-top: 40px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .TopPartEdit{
+        display: flex;
+        flex: 1;
+        gap: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    @media (max-width: 768px) {
+        padding-top: 30px;
+        padding-right: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .EntryOne{
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                color: #6b7280;
+                font-size: 12px;
+            }
+            input{
+                border: 1px solid transparent;
+                outline: none;
+                background-color: #f0f9ff;
+                color: black;
+                font-weight: 700;
+                padding: 5px;
+                width: 250px;
+            }
+            select{
+                border: 1px solid transparent;
+                background-color: #f0f9ff;
+                outline: none;
+                color: black;
+                font-weight: 700;
+                padding: 5px;
+                width: 200px;
+                height: 2.5rem;
+                
+                option{
+                    color: #075985;
+                }
+
+            }
+        }
+    }
+    .SummaryTwo{
+        flex: 50%;
+
+        @media (max-width: 769px) {
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 60px;
+            width: 100%;
+        }
+
+        section{
+            h1{
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+        .SummaryList{
+            padding: 10px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 100px;
+
+                    button{
+                        background-color:#f97316;
+                        color: white;
+                        padding: 5px;
+                        width: 100%;
+                        max-width: 100%;
+                        border-radius: 5px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+    .BottomSave{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top: 70px;
+
+        @media (max-width: 769px) {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding-top: 0px;
+        }
+
+        button{
+            background-color: #154a93;
+            color: white;
+            padding: 10px;
+            border-radius: 0px;
+            width: 100%;
+        }
+    }
+
+}

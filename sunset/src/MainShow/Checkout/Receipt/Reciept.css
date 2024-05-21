@@ -1,0 +1,27 @@
+.reciept{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .75rem;
+    padding: .75em;
+    /* border:1px solid rgba(0,0,0,.1); */
+    box-shadow: rgba(204, 195, 195, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.reciept-table{
+    margin-top: 1rem;
+}
+.reciept-table tr td{
+    padding: .35em 0;
+    
+}
+.reciept-border{
+   border-top: 1px dashed black;
+}
+
+.reciept-border-full{
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    
+ }

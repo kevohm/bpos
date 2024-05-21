@@ -1,0 +1,243 @@
+.ProductRegistration {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @media (max-width: 767px) {
+    padding-top: 150px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 50px;
+  }
+
+  .ProductHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+
+    h1 {
+      font-weight: bold;
+      color: grey;
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      background-color: #0f766e;
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .AddProduct {
+    display: flex;
+    gap: 50px;
+    flex: 1;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .ProductImage {
+      flex: 0.35;
+      height: 100vh;
+
+      .MainImage {
+        position: relative;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 20px;
+
+        @media (max-width: 767px) {
+          box-shadow: none;
+        }
+        img {
+          height: 300px;
+          width: 100%;
+          border-radius: 0px;
+          background-color: rgba(211, 211, 211, 0.134);
+          border: none;
+
+          &.selectedImage {
+            height: auto;
+            @media (max-width: 767px) {
+              width: 100%;
+              height: 300px;
+            }
+          }
+
+          @media (max-width: 767px) {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+            border: none;
+          }
+        }
+        .ImageSelector {
+          position: absolute;
+          top: 8%;
+          left: 80%;
+
+          @media (max-width: 767px) {
+            top: 10%;
+            left: 85%;
+          }
+          label {
+            cursor: pointer;
+            .iconImage {
+              color: black;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+              font-size: 45px;
+              background-color: white;
+              padding: 10px;
+              border-radius: 5px;
+              @media (max-width: 767px) {
+                box-shadow: none;
+                background-color: transparent;
+                font-size: 35px;
+              }
+            }
+          }
+          input {
+            display: none;
+          }
+        }
+      }
+      .OtherImages {
+        display: flex;
+        gap: 10px;
+
+        @media (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .images {
+          position: relative;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          padding: 20px;
+
+          @media (max-width: 767px) {
+            box-shadow: none;
+          }
+
+          img {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(211, 211, 211, 0.134);
+            border-radius: 0px;
+            border: none;
+
+            &.selectedImage {
+              height: 100px;
+              @media (max-width: 767px) {
+                width: 70px;
+                height: 70px;
+              }
+            }
+
+            @media (max-width: 767px) {
+              width: 70px;
+              height: 70px;
+              border-radius: 5px;
+              border: none;
+            }
+          }
+          .ImageSelector {
+            position: absolute;
+            top: 17%;
+            left: 60%;
+
+            @media (max-width: 767px) {
+              top: 20%;
+              left: 55%;
+            }
+            label {
+              cursor: pointer;
+              .iconImage {
+                color: black;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                font-size: 25px;
+                background-color: white;
+                border-radius: 5px;
+                @media (max-width: 767px) {
+                  box-shadow: none;
+                  background-color: transparent;
+                  font-size: 17px;
+                }
+              }
+            }
+            input {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .ProductDetails {
+      flex: 0.65;
+      display: flex;
+      flex-direction: column;
+
+      .producT {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .productEntries {
+          display: flex;
+          justify-content: space-between;
+
+          @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .PEntry {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+              text-transform: uppercase;
+              color: rgb(55, 55, 55);
+              font-size: 12px;
+            }
+
+            input {
+              border: none;
+              border-bottom: 1px solid grey;
+              color: grey;
+              outline: none;
+              width: 300px;
+              padding-left: 5px;
+            }
+            select {
+              border: none;
+              border-bottom: 1px solid grey;
+              color: grey;
+              outline: none;
+              width: 300px;
+              padding-left: 5px;
+              option {
+                padding: 10px;
+                margin: 10px;
+                font-size: 14px;
+                text-transform: capitalize;
+              }
+            }
+            textarea {
+              width: 300px;
+              border: 1px solid grey;
+              border-radius: 10px;
+              padding: 10px;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

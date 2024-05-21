@@ -1,0 +1,190 @@
+.AlphaNav {
+    display: flex;
+    background-color: rgba(21, 74, 147, 1);
+    justify-content: space-between;
+    padding: 1.0rem 0;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: fixed;
+    border-bottom: 2px solid transparent;
+    z-index: 999;
+    margin-left: 0%;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    margin-bottom: 0px;
+  
+    @media (max-width: 768px) {
+      height: 80px;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .AlphaLogo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      
+
+      .LogoAlpha{
+        @media (max-width: 768px) {
+          display: none;
+        }
+       img{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-position: center;
+       }
+      }
+  
+      span {
+        color: #ffd412; 
+        font-weight: bolder;
+        font-size: 1.8rem;
+        filter: brightness(100%);
+        text-transform: none;
+  
+        @media (max-width: 767px) {
+          font-size: 1.4rem;
+        }
+  
+        small {
+          font-size: 0.6em;
+          vertical-align: super;
+          font-weight: normal;
+          filter: brightness(100%);
+          .dottext{
+            color: rgba(21, 74, 147, 1);
+            filter: brightness(100%);
+          }
+  
+          @media (max-width: 767px) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+    
+    .AphaLists{
+        @media (max-width: 767px) {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            background-color: white;
+            width: 50%;
+            height: 100vh;
+            padding: 24px;
+            z-index: 100;
+            transition: 0.5s;
+            border-radius: 0 0 0 0;
+        }
+        .close{
+            display: none;
+            @media (max-width: 767px) {
+                position: absolute;
+                right: 25px;
+                display: block;
+                font-size: 25px;
+                border-radius: 50%;
+                cursor: pointer;
+                color: black; 
+                font-weight: bolder;
+                &.hover{
+                    background-color: #ffecef;
+                }
+            }
+        } 
+        .nav_list{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav_item{
+                margin: 0 10px;
+                color: white;
+                filter: brightness(150%);
+                @media (max-width: 767px) {
+                    margin: 1rem 0;
+                    color: black;
+                }
+                .nav_link{
+                    padding: 5px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                    font-family: "Nunito", sans-serif;
+                    transition: all 0.9s ease 0s;
+                    text-decoration: none;
+                    color: white;
+
+                    button{
+                        background-color: #ffd412;
+                        padding: 10px 15px;
+                        color: #032e69;
+                        border-radius: 200px;
+                        border: none;
+                        outline: none;
+                        font-weight: bold;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        font-family: "Nunito", sans-serif;
+                        @media (max-width: 767px) {
+                          background-color: #032e69;
+                          padding: 10px 15px;
+                          color: #ffd412;
+                          border-radius: 200px;
+                          border: none;
+                          outline: none;
+                          font-weight: bold;
+                        }
+                    }
+                    button:hover{
+                      color: #ffd412;
+                      border: 1px solid white;
+                      background-color: transparent;
+                      transition: 1s;
+                      @media (max-width: 767px) {
+                        background-color: #032e69;
+                        padding: 10px 15px;
+                        color: #ffd412;
+                        border-radius: 200px;
+                        border: none;
+                        outline: none;
+                        font-weight: bold;
+                      }
+                    }
+                }
+         
+            }
+            .nav_item:hover{
+              color: #ffd412;
+            }
+        }
+        
+    }
+
+    .toggle{
+        display: none;
+        @media (max-width: 767px) {
+            display: inline;
+            font-size: 25px;
+            cursor: pointer;
+            color: #ffd412; 
+            font-weight: bolder;
+        }
+    }
+    .show{
+        right: 0;
+    }
+  }
+  

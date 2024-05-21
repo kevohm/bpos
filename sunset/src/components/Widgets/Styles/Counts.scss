@@ -1,0 +1,33 @@
+.Counts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    .IconCat{
+        color: rgba(7, 7, 58, 0.795);
+        font-size: 16px;
+    }
+
+    
+    .Details{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0px;
+        .Link{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .CountsDetails{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 5px;
+        }
+    
+}
+
+}

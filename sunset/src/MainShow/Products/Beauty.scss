@@ -1,0 +1,67 @@
+.ProductDecs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+   
+
+    .prod-one{
+        .Details-one{
+            display: flex;
+            gap: 5px;
+            flex-direction: row;
+            justify-content: center;
+
+           span{
+            display: flex;
+            gap: 5px;
+            small{
+                font-size: 17px;
+                font-weight: 400;
+            }
+            @media screen and (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+            }
+           }
+
+            @media screen and (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    .prod-two{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        small{
+            font-size: 17px;
+        }
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .Controls{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+       button{
+        color: white;
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center; 
+
+        align-items: center;
+        border-radius: 5px;
+       
+      }}
+    
+}

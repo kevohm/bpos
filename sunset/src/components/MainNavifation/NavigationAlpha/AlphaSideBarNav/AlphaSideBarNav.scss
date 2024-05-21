@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+:root {
+    --main-color: white;
+    --main-transition: 0.5s all ease-in-out;
+  }
+  ::selection {
+    color: white;
+    background: var(--main-color);
+  }
+  
+.AlphaSideBarNav{
+    font-family: "Poppins", sans-serif;
+    width: 100px;
+    background-color: #021e46;
+    padding: 20px;
+    height: 100%; 
+    overflow: auto;
+    transition: var(--main-transition);
+    padding-top: 60px;
+
+    @media (max-width: 767px) {
+       display: none;
+    }
+
+        /* Hide scrollbar for Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+      
+        /* Hide scrollbar for WebKit (Chrome, Safari) */
+        &::-webkit-scrollbar {
+          width: 0px;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background-color: transparent;
+        }
+
+    ul{
+        padding-bottom: 30px;
+        list-style: none;
+        @media (max-width: 767px) {
+           padding-bottom: 20px;
+        }
+        span{
+            color: #ffd412;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            display: block;
+            padding-bottom: 20px;
+
+            @media (max-width: 767px) {
+             display: none;
+            }
+        }
+        li{
+            padding-left: 10px;
+            transition: var(--main-transition);
+            @media (max-width: 767px) {
+                padding-left: 0px;
+            }
+
+            a{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 15px;
+                transition: 0.3s all ease-in-out;
+                font-size: 16px;
+                width: 300px;
+                color: var(--main-color);
+                font-weight: 500;
+                text-decoration: none;
+
+                .iconalpha{
+                    font-size: 22px;
+                    color: #ffd412;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                       }
+                }
+                p{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: var(--main-transition);
+                }
+                button{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: var(--main-transition);
+                }
+            }
+            a:hover{
+                  background-color: #2d394f;
+                  color: var(--main-color);
+            }
+            button{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 15px;
+                transition: 0.3s all ease-in-out;
+                font-size: 16px;
+                width: 300px;
+                color: var(--main-color);
+                font-weight: 500;
+                text-decoration: none;
+
+                .iconalpha{
+                    font-size: 22px;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                       }
+                }
+                p{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: var(--main-transition);
+                }
+            }
+            button:hover{
+                  background-color: #2d394f;
+                  color: var(--main-color);
+            }
+        }
+     
+    }
+   
+}
+
+.AlphaSideBarNav:hover{
+    width: 200px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    ul{
+        padding-left: 0px;
+        span{
+            padding-left: 0px;
+        }
+        li{
+          padding-left: 0px;  
+          a{
+            width: 100%;
+            p{
+                visibility: visible;
+                opacity: 1;
+                font-size: 12px;
+            }
+            button{
+                visibility: visible;
+                opacity: 1;
+                font-size: 12px;
+            }
+          }
+          button{
+            width: 100%;
+            p{
+                visibility: visible;
+                opacity: 1;
+                font-size: 12px;
+            }
+          }
+        }
+    }
+}

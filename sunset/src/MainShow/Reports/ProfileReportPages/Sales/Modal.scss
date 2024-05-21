@@ -1,0 +1,20 @@
+.ModalPdf{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    @media (max-width: 768px) {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .modal-content{
+        .ControlBts{
+            display: flex;
+            justify-content: space-between;
+            background-color: #021e46;
+            padding: 10px;
+        }
+    }
+}

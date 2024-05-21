@@ -1,0 +1,304 @@
+.CartAll{
+    padding-top: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
+    display: flex;
+    gap: 15px;
+    height: 100vh;
+    overflow: scroll;
+    margin-bottom: 50px; 
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+        margin-right: 0%;
+        margin-left: 0%;
+        padding-right: 5px;
+        padding-left: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    } 
+
+    /* Hide scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  
+    /* Hide scrollbar for WebKit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+
+.CartShow{
+  flex: 70%;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #f1f5f9;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (max-width: 768px) {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+  }
+
+    .ClearButton{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 5px;
+
+        button{
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+    }
+
+    .Listings{
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #e5e5e5;
+        .ListShow{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+
+            .ProductAll{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    
+                }
+            .ImageShow{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                img{
+                    width: 50px;
+                    height: 70px;
+                    border-radius: 5px;
+
+                    @media (max-width: 768px) {
+                        width: 40px;
+                        height: 50px;
+                    }
+                }
+             
+            }
+            .CartDesc{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                span{
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: #dc2626;
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+
+                    small{
+                        color: grey;
+                    }
+                }
+
+                p{
+                    color: black;
+                    font-size: 14px;
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                    small{
+                        color: grey;
+                    }
+                }
+            }
+            }
+            .CartPriceControl{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 0;
+                background-color: white;
+                border-radius: 5px;
+                span{
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+
+                .Controls{
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                        background-color: transparent;
+                        padding: 1px 8px;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 15px;
+                        outline: none;
+                        border: none;
+                    }
+
+                    small{
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .PriceCount{
+                display: flex;
+                gap: 3px;
+                @media (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                span{
+                    font-size: 14px;
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .deleteButtonCart{
+                button{
+                    color: #dc2626;
+                    background-color: white;
+                    border: none;
+                    outline: none;
+                    border-radius: 50%;
+                    padding: 5px 5px;
+                    }
+                    button:hover{
+                        color: black;
+                        transition: 1s;
+                    }
+            }
+
+        }
+    }
+}
+
+.Checkout{
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #f1f5f9;
+    padding-top: 10px;
+
+   @media (max-width: 768px) {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+  }
+
+    .SummaryHeader{
+        margin: 10px;
+        h1{
+            color: black;
+            font-weight: bold;
+            text-align: left;
+
+            span{
+                font-weight: normal;
+            }
+        }
+    }
+
+    .cartAmount{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        span{
+            color: #374151;
+            font-size: 16px;
+        }
+        .Totals{
+            p{
+                text-align: right;
+                color: #374151;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .cartAmountTotal{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 10px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        span{
+            color: #374151;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .Totals{
+            p{
+                text-align: right;
+                color: #374151;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .PointsEarned{
+
+        margin: 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        span{
+            font-style: oblique;
+            color: #0284c7;
+            font-weight: 600;
+        }
+    }
+
+    .CheckoutButton{
+        display: flex;
+        padding-top: 15px;
+        margin-top: 55px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        button{
+            background-color: #021e46;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            width: 100%;
+        }
+    }
+}
+}

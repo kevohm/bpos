@@ -1,0 +1,120 @@
+.TakeStock{
+    padding-top: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    height: 100vh;
+    padding-bottom: 30px;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 50px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .ProductBrief{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex: 0.5;
+
+        .ProductImageShow{
+            img{
+                height: 350px;
+                width: auto;
+
+                @media (max-width: 767px) {
+                    height: 250px;
+                    width: auto;
+                }
+            }
+        }
+        .BriefDetails{
+          ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            li{
+                display: flex;
+                gap: 10px;
+
+                span{
+                    color: #6b7280;
+                    font-size: 16px;
+                }
+                small{
+                    color: black;
+                    font-size: 14px;
+                }
+            }
+          }
+        }
+    }
+    .StockTakeForm{
+        flex: 0.5;
+       
+        @media (max-width: 767px) {
+            flex: 0.5;
+            width: 100%;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            width: 100%;
+            padding-top: 10px;
+            width: 100%;
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+            }
+
+            .FormInputOne{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 10px;
+
+                label{
+                    color: #6b7280;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+
+                input{
+                    border: 1px solid #6b7280;
+                    padding: 1rem 1rem;
+                    color: black;
+                    font-weight: bold;
+                    width: 100%;
+                    height: 2rem;
+                }
+
+                button{
+                    background-color: #154a93;
+                    color: white;
+                    border-radius: 200px;
+                    padding: 0.5rem 0.5rem;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.HumanResource{
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+
+    .Laeve{
+        h3{
+            text-align: left;
+            color: blueviolet;
+        }
+    }
+    .Sales{
+        padding-top: 30px;
+        h3{
+            text-align: left;
+            color: blueviolet;
+        }
+    }
+
+    .Summary{
+        padding-top: 30px;
+
+
+        h3{
+            text-align: left;
+            color: blueviolet;
+        }
+
+        .Table{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap:  30px;
+
+           
+
+            .TableSummary{
+                flex: 50%;
+                width: 500px;
+            }
+            .Border{
+                border-left: 2px solid rgba(0, 0, 0, 0.342);
+            }
+            .Performance{
+                flex: 50%;
+
+                .Individuals{
+                    display: flex;
+                    flex-direction: column;
+
+                    p{
+                        color: rgb(85, 33, 134);
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.calculator {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    height: fit-content;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      text-align: left;
+      background-color: rgb(192, 186, 186);
+      height: 60px;
+      border-radius: 10px;
+    }
+  
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      margin-top: 10px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      background-color: #f5f5f5;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 10px;
+  
+      &:hover {
+        background-color: #e1e1e1;
+      }
+  
+      &.operator {
+        background-color: #063992;
+        color: #fff;
+        font-weight: bold;
+  
+        &:hover {
+          background-color: #063992;
+        }
+      }
+  
+      &.equal {
+        background-color: #063992;
+        color: #fff;
+        font-weight: bold;
+  
+        &:hover {
+          background-color: #063992;
+        }
+      }
+  
+      &.del {
+        background-color: red;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 10px;
+  
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  
+    .mode-dropdown {
+      grid-column: span 1.5;
+      display: flex;
+      flex-direction: column;
+
+      select {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        background-color: #f5f5f5;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+      }
+
+    }
+  
+    .statistics {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+  
+      button {
+        width: 48%;
+      }
+    }
+  
+    .statistics-results {
+      margin-top: 10px;
+      div {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  

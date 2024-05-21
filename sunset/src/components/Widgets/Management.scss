@@ -1,0 +1,133 @@
+.HomeDashboard{
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Management {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex: 50;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  
+    .Viewmanager {
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      padding-left: 10px;
+  
+      &:hover {
+        background-color: #f5f9fc;
+      }
+  
+      .Linked {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+  
+        .IconView{
+          color: #082f49;
+          font-size: 30px;
+          @media (max-width: 767px) {
+            font-size: 40px;
+          }
+        }
+        
+  
+        .LinkView {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 5px;
+  
+          span {
+            color: #082f49;
+            font-weight: bold;
+            font-size: 16px;
+          }
+  
+          p {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+  
+    .SuspendedButton {
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        z-index: 999;
+      
+        button {
+          padding: 10px 15px;
+          background-color: #3498db;
+          border: none;
+          outline: none;
+          color: #fff;
+          border-radius: 50%;
+          font-size: 18px;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+      
+          &:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+          }
+        }
+      }
+      
+  
+    @media (max-width: 767px) {
+      padding: 15px;
+  
+      .Viewmanager {
+        padding: 15px;
+      }
+  
+      .SuspendedButton {
+        bottom: 20px;
+        right: 20px;
+        button {
+          padding: 8px;
+          font-size: 18px;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      padding: 10px;
+  
+ 
+  
+      .SuspendedButton {
+        bottom: 15px;
+        right: 15px;
+        button {
+          padding: 5px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .AnalyticsCharts{
+    flex: 50%;
+  }
+}

@@ -1,0 +1,172 @@
+.Companies{
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @media(max-width:767px){
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: white;
+    }
+
+    .Form{
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+        border-top: 10px solid #111132;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @media(max-width:767px){
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 10px;
+            padding-top: 20px;
+            border-top: 10px solid #111132;
+            border-bottom: 10px solid #111132;
+            border-radius: 10px;
+        }
+
+        .Entries{
+            display: flex;
+            gap: 50px;
+            @media(max-width:767px){
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+            }
+
+            .CompanyLogo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 30px;
+                img{
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 50%;
+                    background-color: #f3f4f6;
+                    border: none;
+                    @media(max-width:767px){
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .SideA{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .Entry{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    label{
+                        color: grey;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                    input{
+                        border: none;
+                        border-bottom: 1px solid grey;
+                        padding-left: 5px;
+                        outline: none;
+                        width: 300px;
+
+                        @media(max-width:767px){
+                            border: 0.5px solid grey;
+                            border-radius: 5px;
+                            width: 250px;
+                            padding: 10px;
+                        }
+                    }
+
+                    select{
+                        border: none;
+                        border-bottom: 1px solid grey;
+                        padding-left: 5px;
+                        outline: none;
+                        width: 300px;
+                        @media(max-width:767px){
+                            border: 0.5px solid grey;
+                            border-radius: 5px;
+                            width: 250px;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+            .SideB{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .Entry{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    label{
+                        color: grey;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                    input{
+                        border: none;
+                        border-bottom: 1px solid grey;
+                        padding-left: 5px;
+                        outline: none;
+                        width: 300px;
+                        @media(max-width:767px){
+                            border: 0.5px solid grey;
+                            border-radius: 5px;
+                            width: 250px;
+                            padding: 10px;
+                        }
+                    }
+
+                    select{
+                        border: none;
+                        border-bottom: 1px solid grey;
+                        padding-left: 5px;
+                        outline: none;
+                        width: 300px;
+                        @media(max-width:767px){
+                            border: 0.5px solid grey;
+                            border-radius: 5px;
+                            width: 250px;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Button{
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+            button{
+                background-color: #1e40af;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+            }
+        }
+     
+    }
+}

@@ -1,0 +1,317 @@
+.ProfileSettings {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 767px) {
+    padding-top: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 100px;
+  }
+
+  .AccountSettings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      color: grey;
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .account {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+      @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+      }
+
+      .AccountImage {
+        display: flex;
+        flex: 0.3;
+        justify-content: center;
+        align-items: flex-start;
+        @media (max-width: 767px) {
+          padding-bottom: 20px;
+        }
+        img {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          background-color: grey;
+        }
+      }
+
+      .AccountForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 0.7;
+
+        .AccounttEntries {
+          display: flex;
+          width: 100%;
+          gap: 30px;
+
+          @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+          .imageUpload {
+            label {
+              display: flex;
+              flex-direction: column;
+              background-color: #0d9488;
+              cursor: pointer;
+              color: white;
+            }
+          }
+          .AccountEntry {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+              color: grey;
+              font-size: 13px;
+            }
+
+            input {
+              border: none;
+              border-bottom: 1px solid grey;
+              color: grey;
+              outline: none;
+              width: 300px;
+              padding-left: 5px;
+
+              @media (max-width: 767px) {
+                width: 300px;
+              }
+            }
+          }
+
+          .Buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+            button {
+              background-color: #0f766e;
+              width: 100%;
+              padding: 10px;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .BranchSettings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      color: grey;
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .BranchEntries {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      h3 {
+        color: grey;
+        font-weight: bold;
+      }
+      p {
+        color: teal;
+        font-size: 13px;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+      }
+
+      .BranchEntry {
+        display: flex;
+        gap: 100px;
+
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .SingleEntry {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          label {
+            color: grey;
+            font-size: 13px;
+          }
+
+          input {
+            border: none;
+            border-bottom: 1px solid grey;
+            color: grey;
+            outline: none;
+            width: 300px;
+            padding-left: 5px;
+
+            @media (max-width: 767px) {
+              width: 300px;
+            }
+          }
+
+          textarea {
+            border: 1px solid grey;
+            width: 500px;
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+            color: grey;
+            @media (max-width: 767px) {
+                width: 300px;
+            }
+          }
+        }
+      }
+
+      .Paymentmethod {
+        display: flex;
+        gap: 10px;
+
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+          color: grey;
+          font-size: 13px;
+        }
+        select {
+          width: 300px;
+          border: none;
+          border-bottom: 1px solid grey;
+          color: grey;
+          outline: none;
+        }
+      }
+      .MethodA {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 10px;
+
+        label {
+          color: grey;
+          font-size: 13px;
+        }
+        input {
+          width: 300px;
+          border: none;
+          border-bottom: 1px solid grey;
+          color: grey;
+          outline: none;
+        }
+      }
+      .MethodB {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding-top: 10px;
+
+        .Mpesa {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          label {
+            color: grey;
+            font-size: 13px;
+          }
+          input {
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid grey;
+            color: grey;
+            outline: none;
+          }
+        }
+
+        .MpesaDetails {
+          display: flex;
+          gap: 30px;
+          padding-top: 20px;
+
+          @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+          }
+
+          .DetailA{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+                color: grey;
+                font-size: 13px;
+              }
+              input {
+                width: 300px;
+                border: none;
+                border-bottom: 1px solid grey;
+                color: grey;
+                outline: none;
+              }
+          }
+        }
+      }
+      .SubmitButton{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            color: white;
+            background-color: #0d9488;
+            padding: 10px;
+        }
+      }
+    }
+  }
+}

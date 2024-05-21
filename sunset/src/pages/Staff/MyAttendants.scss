@@ -1,0 +1,41 @@
+.MyAttendants {
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: 767px) {
+    padding-top: 150px;
+  }
+
+  .TabContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .ActionButtons{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        .Download{
+            color: #1e40af;
+            font-weight: 500;
+        }
+
+        button{
+            color: #1e40af;
+            font-weight: 500;
+            border-left: 5px solid grey;
+
+            .Link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+  }
+
+}

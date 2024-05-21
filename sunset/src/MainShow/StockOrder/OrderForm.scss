@@ -1,0 +1,128 @@
+.OrderForm{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+
+
+    .entriesOrder{
+        display: flex;
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .OrderFormA{
+            flex: 0.5;
+            gap: 10px;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 5px;
+            }
+       .OrderFormEntry{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 3px;
+                label{
+                    color: #334155;
+                    font-weight: normal;
+                    font-size: 13px;
+                }
+                input{
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    color: black;
+                    font-weight: 700;
+                }
+       }
+        }
+
+        .OrderFormB{
+            flex: 0.5;
+            gap: 10px;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            .OrderFormEntry{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 3px;
+            label{
+                color: #334155;
+                font-weight: normal;
+                font-size: 13px;
+            }
+            input{
+                border: 1px solid grey;
+                border-radius: 5px;
+                color: black;
+                font-weight: 700;
+            }
+        }
+        }
+    }
+
+    .OrderForwardButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+
+        button{
+            background-color: #021e46;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+
+    .DisplayList{
+        padding-top: 20px;
+        @media (max-width: 768px) {
+          overflow: scroll;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            th{
+                border: 1px solid #ddd;
+                border-radius: 0px;
+                padding: 12px;
+                background-color: #021e46;
+                color: white;
+            }
+            td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                white-space: nowrap; 
+                overflow: hidden; 
+                text-overflow: ellipsis;
+            }
+        }
+
+        .totalCost {
+            margin-top: 15px;
+            span{
+                
+            }
+        }
+
+    }
+}

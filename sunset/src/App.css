@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Your+Custom+Font&display=swap');
+
+body {
+  font-family: 'Your Custom Font', sans-serif;
+  margin-top: 0px;
+}
+
+
+/* @media (max-width: 767px) {
+  .App{
+    padding-top: 70px;
+  }
+} */

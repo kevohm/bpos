@@ -1,0 +1,28 @@
+.Reports{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .ReportPartA{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        button{
+            background-color: transparent;
+            border: 1px solid grey;
+            outline: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(206, 201, 201);
+        }
+    }
+
+    
+    
+}

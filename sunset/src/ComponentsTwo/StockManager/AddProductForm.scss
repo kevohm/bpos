@@ -1,0 +1,258 @@
+.AddProductForm {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 10px;
+      padding-top: 20px;
+      @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+      }
+  
+      .AddProductTop {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        gap: 30px;
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+  
+        .ProductImage {
+            display: flex;
+            flex: 0.4;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 1rem 1rem;
+
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            
+  
+          img {
+            height: 200px;
+            width: 300px;
+            background-color: #f0f9ff; 
+            border-radius: 2px;
+            border: none;
+
+            &.selectedImage {
+                height: 300px; 
+                @media (max-width: 767px) {
+                    width: 100%;
+                    height: 300px;
+                }
+              }
+
+            @media (max-width: 767px) {
+                width: 100%;
+                height: 150px;
+                border-radius: 5px;
+                border: none;
+            }
+          }
+         .ImageSelctor{
+            padding-left: 45%;
+            text-align: center;
+            @media (max-width: 767px) {
+                padding-left: 0%;
+                text-align: center;
+            }
+            .CameraIcon {
+                font-size: 35px;
+                color: #032e69; 
+                cursor: pointer;
+                border: 1px solid #075985;
+                border-radius: 50%;
+                padding: 5px 5px;
+              }
+              .FileInput {
+                display: none; 
+              }
+         }
+        }
+  
+        .ProductForm {
+            display: flex;
+            flex: 0.6;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            @media (max-width: 767px) {
+                padding: 10px;
+            }
+  
+          .TopAddition {
+            display: flex;
+            justify-content: space-between;
+  
+            .TopAdditionDesc {
+              display: flex;
+              flex-direction: column;
+              gap: 1px;
+              span{
+                color: #9ca3af;
+                font-size: 14px;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+              }
+              h2{
+                font-size: 20px;
+                color: black;
+                font-weight: 600;
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
+              }
+            }
+            .TopAdditionCat{
+                button{
+                    background-color: #bae6fd;
+                    color: black;
+                    padding: 5px 5px;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+
+          }
+          .FormDetails{
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            @media (max-width: 767px) {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: flex-start;
+               margin-bottom: 60px;
+            }
+
+           
+
+            .FormDetailEntry{
+                display: flex;
+                gap: 5px;
+                .EntryPoint{
+                    display: flex;
+                    flex-direction: column;
+
+                    label{
+                        color: #6b7280;
+                        font-size: 12px;
+                    }
+                    input{
+                        border: 1px solid transparent;
+                        background-color: #f0f9ff;
+                        outline: none;
+                        color: black;
+                        font-weight: 700;
+                        padding: 5px;
+                        @media (max-width: 767px) {
+                            width: 150px;
+                        }
+                    }
+                    select{
+                        border: 1px solid transparent;
+                        background-color: #f0f9ff;
+                        outline: none;
+                        color: black;
+                        font-weight: 700;
+                        padding: 5px;
+                        width: 230px;
+                        text-transform: lowercase;
+                        @media (max-width: 767px) {
+                            width: 150px;
+                        }
+
+                        option{
+                          text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+            .FormSummary{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 3px;
+                padding-top: 20px;
+              
+
+                .SummaryItem{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 50px;
+
+                    span{
+                        color: #032e69;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+          }
+        }
+      }
+  
+      .AddProductBottom {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+
+        @media (max-width: 767px) {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding-top: 0px;
+            margin-top: 20px;
+            background-color: white;
+        }
+  
+        .CancelButton{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span{
+                font-size: 12px;
+            }
+            button{
+                color: #dc2626;
+                font-weight: 500;
+            }
+        }
+        .SubmitButton {
+            flex: 0.5;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            bottom: 0;
+          button {
+            background-color: #032e69;
+            color: white;
+            padding: 10px;
+            border-radius: 0px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  

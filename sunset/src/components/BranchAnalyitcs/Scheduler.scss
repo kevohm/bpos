@@ -1,0 +1,60 @@
+.Scheduler{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 500px;
+
+    .ScheduleItem{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+       
+        label{
+            color: grey;
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        select{
+            border: 1px solid grey;
+            outline: none;
+            width: 200px;
+            height: 2rem;
+            border-radius: 5px;
+        }
+
+        input{
+            border: 1px solid grey;
+            outline: none;
+            width: 200px;
+            height: 2rem;
+            border-radius: 5px;
+        }
+
+        textarea{
+            width: 200px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+       
+    }
+    .ScheduleSubmit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        button{
+            border: none;
+            outline: none;
+            width: fit-content;
+            background-color: orange;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+   
+    }
+}
