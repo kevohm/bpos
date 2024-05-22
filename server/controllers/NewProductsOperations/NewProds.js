@@ -89,8 +89,21 @@ export const getProductBySubsizeId = async (req, res) => {
 
     const [[subsize]] = await pool.query(subsizeQuery, [subsizeId]);
     const [[size]] = await pool.query(sizeQuery, [subsize.sizeId]);
+    const [[product]] = await pool.query(productQuery, [size.productId]);
+    const [[images]] = await pool.query(imageQuery, [size.productId]);
+    const [[branch]] = await pool.query(branchQuery, [product.branch_id]);
 
-    const currentProduct = {subsize,size}
+    const imageBaseUrl = `http://${req.hostname}/Images/`;
+    const formattedImages = {
+      ...images,
+      imageOne: `${imageBaseUrl}${images.imageOne}`,
+      imageTwo: `${imageBaseUrl}${images.imageTwo}`,
+      imageThree: `${imageBaseUrl}${images.imageThree}`,
+      imageFour: `${imageBaseUrl}${images.imageFour}`,
+    };
+
+
+    const currentProduct = {subsize,size, product,images:formattedImages, branch}
     return res
       .status(200)
       .json({ message:"Product found", product:currentProduct });
